@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Arrosage intelligent</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <h1>Arrosage Intelligent</h1>
+    <nav>
+      <a href="../index.html">Accueil</a>
+      <a href="../projets/projets.html">Projets</a>
+    </nav>
+  </header>
+
+  <main class="projet-detail">
+    <h2>Présentation du projet</h2>
+    <p>
+      Ce projet a été réalisé dans le cadre de mon BTS, sur une durée de quatre mois. 
+      Il s'agissait d'un travail en équipe de quatre personnes, ayant pour objectif la conception d'un système d'arrosage intelligent et connecté
+       pour un potager pédagogique. Ce système devait fonctionner de manière autonome, notamment pendant les vacances scolaires, 
+       période durant laquelle le personnel n'est pas présent sur site.
+    </p>
+  
+    <h2>Objectifs</h2>
+    <ul>
+      <li>Assurer un arrosage régulier du potager même en l'absence de personnel.</li>
+      <li>Minimiser la perte des cultures.</li>
+      <li>Permettre un pilotage à distance simple et sécurisé.</li>
+    </ul>
+  
+    <h2>Fonctionnalités principales</h2>
+    <ul>
+      <li>Mode automatique basé sur les capteurs et les prévisions météo.</li>
+      <li>Contrôle manuel à distance via l'interface web ou l'application mobile.</li>
+      <li>Affichage des données en temps réel sur site via une matrice LED.</li>
+    </ul>
+  
+    <h2>Technologies utilisées</h2>
+
+    <p><strong>Matériel :</strong> ESP32, capteurs d'humidité, de débit et de niveau d'eau, pompe à eau, matrice LED (Hub75)</p>
+    
+    <p><strong>Logiciel :</strong></p>
+    <ul>
+      <li>API Node.js (Express), WebSocket, MQTT</li>
+      <li>Base de données InfluxDB (données temporelles)</li>
+      <li>Infrastructure : Docker, Nginx, hébergement sur DigitalOcean</li>
+      <li>Sécurisation : chiffrement SSL/TLS avec Certbot</li>
+    </ul>
+    
+    <h2>Mes contributions</h2>
+    <p>
+      J'ai été en charge du développement de l'API sécurisée, qui constitue le cœur de communication du système. 
+      Mon travail a couvert :
+    </p>
+    <ul>
+      <li>la réception et le traitement des données provenant des capteurs,</li>
+      <li>l'implémentation de la logique d'arrosage automatique,</li>
+      <li>la communication avec l'interface web, l'application mobile, le serveur LoRaWAN et la base de données,</li>
+      <li>l'intégration de WebSocket pour le temps réel.</li>
+    </ul>
+    <p>
+      J'ai également mis en place les mécanismes de sécurité, incluant l'authentification par token et le chiffrement SSL.
+    </p>
+    
+  
+    <h2>Galerie du projet</h2>
+    <div class="project-gallery">
+      <img src="../img/tranchée_sans_tuyaux.jpg" alt="Photo 1" onclick="openLightbox(this.src)">
+      <img src="../img/tranchée_avec_tuyaux.jpg" alt="Photo 2" onclick="openLightbox(this.src)">
+      <img src="../img/passerelle.png" alt="Photo 3" onclick="openLightbox(this.src)">
+      <img src="../img/goutière.jpg" alt="Photo 4" onclick="openLightbox(this.src)">
+      <img src="../img/robinet.jpg" alt="Photo 5" onclick="openLightbox(this.src)">
+      <img src="../img/capteur_level-sensor.jpg" alt="Photo 6" onclick="openLightbox(this.src)">
+      <img src="../img/capteur_humidité.jpg" alt="Photo 7" onclick="openLightbox(this.src)">
+      <img src="../img/controleur.jpg" alt="Photo 8" onclick="openLightbox(this.src)">
+      <img src="../img/système_arrosage.jpg" alt="Photo 9" onclick="openLightbox(this.src)">
+      <img src="../img/panneaux_solaire.jpg" alt="Photo 10" onclick="openLightbox(this.src)">
+      <img src="../img/cabane.jpg" alt="Photo 11" onclick="openLightbox(this.src)">
+      <img src="../img/potager_final.jpg" alt="Photo 12" onclick="openLightbox(this.src)">
+    </div>
+
+    <h3>Interface web / mobile</h3>
+    <div class="project-gallery">
+      <img src="../img/interface_web.png" alt="Interface web" onclick="openLightbox(this.src)">
+      <img src="../img/interface_app.jpg" alt="Interface mobile" onclick="openLightbox(this.src)">
+    </div>
+    
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" alt="Image agrandie">
+    </div>
+    
+    <h2>Liens et ressources</h2>
+    <p><a href="./cachier_des_charges.pdf" target="_blank">Cahier des charges (PDF)</a></p>
+    <p><a href="rapport_de_projet.pdf" target="_blank">Rapport de projet (PDF)</a><br>
+      <small style="color: grey">Des modifications ont été apportées après la remise de ce rapport.</small></p>    <p>
+      <a class="mail-button" href="mailto:quentin.payet77@gmail.com?subject=Demande d'accès dépôt - Arrosage Intelligent&body=Bonjour,%0A%0AJe souhaite accéder à votre dépôt d'arrosage, voici mon GitHub : [votreUserGithub]">
+        Demander l'accès au dépôt GitHub
+      </a>
+    </p>   
+      </main>
+  
+  <script src="../js/aggrandir_image_arrosage.js"></script>
+  
+</body>
+</html>

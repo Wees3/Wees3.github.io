@@ -1,0 +1,138 @@
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.project {
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.project img:hover {
+    transform: scale(1.1);
+}
+
+.project span {
+    margin-top: 8px;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: black;
+    flex-shrink: 0;
+}
+
+
+/*arrosage intelligent*/
+
+.projet-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .projet-detail h2 {
+    margin-top: 30px;
+    color: black;
+    text-align: center;
+  }
+
+  .projet-detail h3 {
+    margin-top: 30px;
+    color: black;
+    text-align: center;
+  }
+  
+  .projet-detail p {
+    margin-bottom: 16px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .projet-detail ul {
+    list-style-position: inside;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  .projet-detail li {
+    margin-bottom: 8px;
+    padding-left: 10px;
+  }
+
+/* Galerie */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 30px auto;
+    max-width: 1000px;
+    padding: 0 20px;
+  }
+  
+  .project-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .project-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  }
+  
+  /* Lightbox */
+  #lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  #lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    cursor: zoom-out;
+  }
+  
+  
